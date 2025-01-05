@@ -1,0 +1,141 @@
+1. O que é a UML?
+A UML (Unified Modeling Language) é uma linguagem de modelação gráfica standard que utiliza notações gráficas para descrever e modelar sistemas de software.
+--------------------------/------------------/------------------
+2. Quais são os principais componentes da UML?
+
+Notações gráficas: Um conjunto de símbolos gráficos usados para modelar sistemas.
+Meta-modelo único: Uma estrutura subjacente que define os elementos e regras da UML.
+--------------------------/------------------/------------------
+3. Quais são os tipos de utilização da UML?
+Sketch (Esboço): Diagramas para comunicar ideias de forma simples e não formal.
+Blueprint (Projeto detalhado): Diagramas que detalham partes específicas de um sistema.
+Linguagem de programação: Diagramas que implementam diretamente partes de um sistema.
+Modelagem conceitual e de software: Para descrever e comunicar a arquitetura ou funcionamento de um sistema com um nível elevado de abstração.
+
+-------------Sketch--------------------------------
+
+4. Quais são os métodos de engenharia aplicáveis com UML no sketch?
+
+Forward engineering: Criar diagramas antes de escrever código, para ajudar na concepção e discussão do sistema com a equipa.
+
+Reverse engineering: Criar diagramas depois de o código já estar escrito, para explicar ou documentar partes do sistema.
+
+--------------------Linguagem de programação-----------------
+
+1. O que é UML como linguagem de programação?
+UML (Unified Modeling Language) pode ser usado como uma linguagem de programação, permitindo que programadores criem sistemas diretamente a partir de modelos UML, que podem ser compilados para gerar código executável.
+--------------------------/------------------/------------------
+2. Como o Model Driven Architecture (MDA) usa UML?
+
+O MDA é uma abordagem standard que utiliza UML como base para construir sistemas. Ele define duas etapas de modelagem:
+
+Platform Independent Model (PIM): Um modelo que representa o sistema de forma independente de qualquer plataforma tecnológica.
+
+Platform Specific Model (PSM): Um modelo específico para uma determinada plataforma/tecnologia, que pode também ser em UML.
+--------------------------/------------------/------------------
+4. Como a abordagem MDA transforma o PIM em código executável?
+O PIM é transformado em um PSM utilizando ferramentas especializadas, e depois o PSM é convertido em código que pode ser executado, sendo esse processo parcialmente ou totalmente automatizado.
+--------------------------/------------------/------------------
+5. O que é Executable UML e como se compara ao MDA?
+O Executable UML é semelhante ao MDA, mas é mais simples. Ele permite a criação de modelos independentes da plataforma (como o PIM no MDA) que podem ser compilados diretamente para gerar sistemas executáveis. Ao contrário do MDA, não há necessidade de PSMs.
+--------------------------/------------------/------------------
+8. O UML como linguagem de programação é uma ideia realista?
+Embora seja uma ideia promissora, ainda existem dúvidas sobre a sua viabilidade prática devido à maturidade das ferramentas e à produtividade em comparação com outras linguagens de programação tradicionais.
+
+------------------------Conceptual and software modeling
+
+2. O que caracteriza a perspetiva de software na modelagem com UML?
+Na perspetiva de software, os elementos UML são diretamente mapeados para elementos de software. Exemplos incluem:
+
+-->Ferramentas que geram UML a partir do código.
+
+-->Software que é diretamente mapeado para UML.
+--------------------------/------------------/------------------
+3. O que caracteriza a perspetiva conceitual na modelagem com UML?
+
+Na perspetiva conceitual, os elementos UML são usados para descrever conceitos de um domínio de aplicação, sem focar em elementos de software. O objetivo é criar um “vocabulário” para falar sobre o domínio específico do problema.
+
+------------------------Notações e meta-modelos---------
+
+1. O que a UML define em termos de notações e meta-modelos?
+
+A UML define:
+-->Notações: Elementos gráficos e a sintaxe gráfica usados na modelação (como classes, relações, multiplicidade, etc.).
+-->Meta-modelo: Conjunto de conceitos que especificam como a linguagem deve ser usada.
+--------------------------/------------------/------------------
+5. Quais são as limitações das linguagens gráficas?
+-->Pouco rigor: Muitas vezes, as notações gráficas dependem mais da intuição do que de uma definição formal, mas apesar da informalidade, continuam a ser ferramentas muito úteis para modelar sistemas.
+--------------------------/------------------/------------------
+6. Qual é a importância do meta-modelo?
+
+A importância do meta-modelo varia conforme o uso:
+
+-->Sketching (Esboço): Foca-se apenas nas notações gráficas, sem precisar de um meta-modelo.
+-->Blueprinting (Projeto detalhado): Usa notações gráficas e parte do meta-modelo.
+-->UML como linguagem de programação: Requer tanto notações gráficas quanto uma forte dependência do meta-modelo para gerar sistemas executáveis.
+
+---------------------------UML válido-----------------------
+1. O que é considerado UML válido?
+
+UML válido é, de forma simples, “o que está definido como bem formado na sua especificação”.
+--------------------------/------------------/------------------
+2. Na prática, é fácil definir UML válido?
+
+Não, na prática, não é tão simples. O standard UML é complexo e está aberto a várias interpretações, podendo ser usado de diferentes maneiras, dependendo da aplicação.
+--------------------------/------------------/------------------
+3. Qual é a importância do UML válido em diferentes utilizações?
+
+-->Sketching ou blueprinting: A validade formal do UML é menos importante. O foco é mais em garantir um bom design do sistema.
+-->UML como linguagem de programação: A validade do UML é essencial, pois, se não for correto, o sistema não funcionará como esperado.
+
+-------------Significado do UML/Será suficiente?/Começar por onde?--------
+2. Como se relaciona um diagrama UML com o código fonte?
+
+Não há uma tradução exata de um diagrama UML para código fonte.
+É possível obter uma “ideia geral” de como o código poderia ser a partir do diagrama, o que é considerado suficiente.
+Os detalhes da implementação são de responsabilidade da equipe de desenvolvimento.
+--------------------------/------------------/------------------
+3. Um grande conjunto de diagramas UML é suficiente para modelar um sistema?
+
+Embora haja um grande conjunto de diagramas UML que pode modelar diferentes aspectos de um sistema de forma completa, esse conjunto é considerado incompleto, e pode ser necessário recorrer a outros tipos de diagramas.
+--------------------------/------------------/------------------
+5. Quais são os diagramas UML mais usados?
+Os diagramas mais comumente utilizados incluem:
+
+Classes
+Sequências
+Atividades
+Use cases
+Objetos
+Transições de estados
+------------------------------UML e processos de desenvolvimento---------
+
+1.Como os diagramas UML são utilizados no desenvolvimento de software?
+
+Há um grande conjunto de diagramas UML, mas apenas um pequeno subconjunto é usado na prática.
+Raramente todos os diagramas são utilizados; 
+A escolha depende da utilização e do sistema/aplicação em questão.
+Os diagramas mais usados incluem classes, sequências, atividades, use cases, objetos e transições de estados.
+--------------------------/------------------/------------------
+2. Qual o papel dos use cases na análise de requisitos?
+
+Use cases: Descrevem como os utilizadores interagem com o sistema, permitindo entender as necessidades e expectativas dos usuários.
+--------------------------/------------------/------------------
+3. Como os diagramas de classes contribuem para a análise de requisitos?
+
+Os diagramas de classes, a partir de uma perspectiva conceptual, ajudam a construir um vocabulário sobre o domínio do sistema, facilitando a comunicação entre a equipe.
+--------------------------/------------------/------------------
+4. Qual é a função dos diagramas de atividades na análise de requisitos?
+
+Os diagramas de atividades ilustram o fluxo de trabalho na empresa e como o software interage com as atividades humanas, mostrando o contexto dos use cases e detalhando casos complexos.
+--------------------------/------------------/------------------
+6. Como são utilizados os diagramas de estados?
+
+Diagramas de estados: Usados se o sistema tiver um ciclo de vida interessante.
+--------------------------/------------------/------------------
+8. Quais diagramas são úteis na documentação?
+
+-->Package diagram: Oferece um mapa lógico do sistema.
+-->Diagramas de classes: Mostram apenas os aspectos importantes de cada package.
+-->Diagramas de interação: Ajudam a compreender aspectos de diagramas de classes.
+-->Máquinas de estados: Ajudam a entender o ciclo de vida das classes, especialmente para classes mais complexas.
